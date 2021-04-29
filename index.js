@@ -1,15 +1,19 @@
-//Import required packages
+//Import required NPM packages
 const inquirer = require('inquirer')
-const fs = require('fs')
 
-// TODO: Create an array of questions for user input
-const questions = [];
+//Import local js modules
+const questions = require("./utils/questions.js")
+const generateMarkdown = require("./utils/generateMarkdown.js")
+const writeToFile = require("./utils/writeToFile.js")
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
+//Initialise app function - this runs the prompts in the console once the program is called with 'node index.js'
+function init() {
+    inquirer.prompt(questions)
+    .then((answers) => {
+        let readme = generateMarkdown(answers)
+        writeToFile('./new-readme.md',readme)
+    })
+}
 
 // Function call to initialize app
 init();

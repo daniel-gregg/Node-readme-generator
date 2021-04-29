@@ -1,14 +1,27 @@
 {
-  "name": "static-site",
+  "name": "node-readme-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Node.js console-based readme generator using the inquirer module to implement prompt-based requests to fill out readme sections",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Daniel Gregg",
   "license": "ISC",
   "dependencies": {
     "inquirer": "^6.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spaniel-boone/Node-readme-generator.git"
+  },
+  "keywords": [
+    "readme",
+    "inquirer",
+    "fs"
+  ],
+  "bugs": {
+    "url": "https://github.com/spaniel-boone/Node-readme-generator/issues"
+  },
+  "homepage": "https://github.com/spaniel-boone/Node-readme-generator#readme"
 }
