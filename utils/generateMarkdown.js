@@ -1,3 +1,5 @@
+const licenses = require("./licenses");
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 
@@ -17,9 +19,41 @@ function renderLicenseSection(license) {} */
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.name}
-          # ${data.location}
-`;
+  return `
+  # ${data.title}
+
+  ## Badges:
+  ![license badge](${licenses[licenses.findIndex(x => x.key === "gpl-3.0")].badge})
+
+  ## Description
+  ${data.description}
+
+  ## Table of Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [License](#license)
+  - [Features](#features)
+
+  ## Installation
+  ${data.installation}
+
+  ## Usage
+  ${data.usage}
+  ![screenshot](${data.screenshot})
+
+  ## Credits
+  ${data.credits}
+  
+  ## License
+  ${licenses[licenses.findIndex(x => x.key === "gpl-3.0")].name}
+  ${licenses[licenses.findIndex(x => x.key === "gpl-3.0")].badge}
+
+  ## Features
+  ${data.features}
+
+`
 }
 
 module.exports = generateMarkdown;
+
