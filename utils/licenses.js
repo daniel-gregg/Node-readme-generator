@@ -104,11 +104,6 @@ const licenses = [
       "badge": "https://img.shields.io/badge/license-Unlicense-blue.svg"
     }
   ]
-  
-  const keys = licenses.map(license => license.key)
-  const names = licenses.map(license => license.name)
-  const urls = licenses.map(license => license.url)
-  const badges = licenses.map(license => license.badge)
 
   module.exports = licenses
   

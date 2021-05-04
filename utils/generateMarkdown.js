@@ -25,6 +25,9 @@ function generateMarkdown(data) {
   ## Badges:
   ![license badge](${licenses[licenses.findIndex(x => x.key === "gpl-3.0")].badge})
 
+  ## Author
+  github.com/${data.author}
+  
   ## Description
   ${data.description}
 
@@ -52,6 +55,8 @@ function generateMarkdown(data) {
   ## Features
   ${data.features}
 
+  ## Contact
+  ${data.email}
 `
 }
 

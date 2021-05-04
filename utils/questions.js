@@ -1,5 +1,4 @@
 const licenses = require("./licenses");
-
 const names = licenses.map(license => license.name)
 
 // TODO: Create an array of questions for user input
@@ -8,6 +7,11 @@ const questions = [
       type: 'input',
       name: 'title',
       message: 'What is the title of your application?',
+    },
+    {
+      type: 'input',
+      name: 'author',
+      message: 'Please enter your github username',
     },
     {
       type: 'input',
@@ -22,11 +26,13 @@ const questions = [
       type: 'input',
       name: 'installation',
       message: `What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.`,
+      default: 'Let us hope it is obvious, the author has left this blank!'
     },
     {
       type: 'input',
       name: 'usage',
-      message: `Provide instructions and examples for use.`,
+      message: 'Provide instructions and examples for use.',
+      default: 'I guess you will have to work it out, the authors has left this blank!'
     },
     {
       type: 'input',
@@ -41,13 +47,21 @@ const questions = [
     },
     {
       type: 'input',
-      name: 'creditsNames',
-      message: 'Please provide any other contributors names. If none, leave blank.'
+      name: 'credits',
+      message: 'Please provide any other contributors names. If none, leave blank.',
+      default: 'No other authors'
     },
     {
       type: 'input',
       name: 'features',
-      message: 'Please provide a description of the features of your application'
+      message: 'Please provide a description of the features of your application',
+      default: 'Blank'
+    },
+    {
+      type: 'input',
+      name: 'contact',
+      message: 'Please enter an email address for readers to contact you',
+      default: ''
     }
   ];
 
