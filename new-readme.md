@@ -1,5 +1,5 @@
 
-  # New readme
+  # New app!
 
   ## Badges:
   ![license badge](https://img.shields.io/badge/License-GPLv3-blue.svg)
@@ -8,7 +8,7 @@
   github.com/spaniel-boone
   
   ## Description
-  Not much, really
+  It's a super simple app!
 
   ## Table of Contents
   - [Installation](#installation)
@@ -18,21 +18,21 @@
   - [Features](#features)
 
   ## Installation
-  no instructions needed
+  Let us hope it is obvious, the author has left this blank!
 
   ## Usage
-  just work it out yourself!
+  Just read the readme!
   ![screenshot](./assets/screenshot.png)
 
   ## Credits
-  undefined
+  No others
   
   ## License
   GNU General Public License v3.0
-  https://img.shields.io/badge/License-GPLv3-blue.svg
+  ![license URL]https://api.github.com/licenses/gpl-3.0
 
   ## Features
-  no particularly interesting features
+  Too many to list!
 
   ## Contact
   undefined

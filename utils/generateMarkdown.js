@@ -50,7 +50,7 @@ function generateMarkdown(data) {
   
   ## License
   ${licenses[licenses.findIndex(x => x.key === "gpl-3.0")].name}
-  ${licenses[licenses.findIndex(x => x.key === "gpl-3.0")].badge}
+  ![license URL]${licenses[licenses.findIndex(x => x.key === "gpl-3.0")].url}
 
   ## Features
   ${data.features}

@@ -28,8 +28,7 @@ Key learnings from this project were:
 
 ## Usage
 See the link below for a video presenting usage of the Node-readme-generator program
-
-![link to video](./assets/usage-video.XXX)
+https://drive.google.com/file/d/1f7kFTWFUpwF_TzxeY7QdNKQQssTvJBOn/view
 
 ## Features
 Users can generate a properly formatted readme.md file with the following sections:
