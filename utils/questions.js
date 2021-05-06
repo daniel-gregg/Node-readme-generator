@@ -1,7 +1,8 @@
+//import modules
 const licenses = require("./licenses");
 const names = licenses.map(license => license.name)
 
-// TODO: Create an array of questions for user input
+//An array of questions for user input providing input to the readme file
 const questions = [
     {
       type: 'input',

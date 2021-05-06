@@ -1,3 +1,4 @@
+//popular licenses from github
 const licenses = [
     {
       "key": "agpl-3.0",
